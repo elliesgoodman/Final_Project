@@ -4,3 +4,13 @@
   height: 400px;
   object-fit: cover;
 }
+#grid img {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .mobilehide {
+        display: none !important;
+    }
+}
