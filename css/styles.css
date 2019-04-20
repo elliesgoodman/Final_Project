@@ -14,6 +14,16 @@
         display: none !important;
     }
 }
+@media screen and (min-width: 767px) {
+    .mobileshow {
+        display: none !important;
+    }
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 .quote {
   text-align: center;
@@ -29,4 +39,36 @@
   list-style: none;
   text-align: right;
   margin-right: 10px;
+}
+
+.btn-lg.btn-block.email-me {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10pt;
+  border: 1pt solid;
+  border-style: double;
+  border-color: black;
+}
+
+a.btn-lg.btn-block.email-me {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-lg.btn-block.email-me:hover {
+  color: gray;
+}
+
+a.mobile.email-me {
+  font-style: italic;
+  text-align: right;
+  margin-left: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10pt;
+  color: black;
 }
