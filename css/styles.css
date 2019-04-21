@@ -1,166 +1,179 @@
 /* Carousel sizing */
-#carouselExampleCaptions img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-#grid img {
-  width: 100%;
-  padding-bottom: 30px;
-}
-
-@media screen and (max-width: 767px) {
-    .mobilehide {
-        display: none !important;
-    }
-}
-@media screen and (min-width: 767px) {
-    .mobileshow {
-        display: none !important;
-    }
-}
-
-.container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.quote {
-  text-align: center;
-  list-style-position: inside
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-}
-
-.sitewidefooter {
-  list-style: none;
-  text-align: right;
-  margin-right: 10px;
-}
-
-.btn-lg.btn-block.email-me {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-style: italic;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 10pt;
-  border: 1pt solid;
-  border-style: double;
-  border-color: black;
-}
-
-
-a.btn-lg.btn-block.email-me {
-  text-decoration: none;
-  color: black;
-}
-
-.btn-lg.btn-block.email-me:hover {
-  color: gray;
-}
-
-a.mobile.email-me {
-  font-style: italic;
-  text-align: right;
-  margin-left: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 10pt;
-  color: black;
-}
-
-.jumbotron {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-bottom: 0;
-  background-color: #fff;
-}
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+  .carousel {
+    margin-bottom: 4rem;
   }
-}
 
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
 
-.jumbotron-heading {
-  font-weight: 300;
-}
+  .carousel-item {
+    height: 32rem;
+    background-color: #777;
+  }
+  .carousel-item > img {
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+/* END OF CAROUSEL */
 
-.jumbotron .container {
-  max-width: 40rem;
-}
+/* GRID LAYOUT STYLING  */
+  #grid img {
+    width: 100%;
+    padding-bottom: 30px;
+  }
 
-/* The sidebar menu */
-.sidenav {
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; 
-  top: 76px; /* Stay at the top */
-  bottom: 100px;
-  left: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 100px;
-}
+/* Hide elements when on mobile */
+  @media screen and (max-width: 767px) {
+      .mobilehide {
+          display: none !important;
+      }
+  }
+  @media screen and (min-width: 767px) {
+      .mobileshow {
+          display: none !important;
+      }
+  }
 
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
+/* END OF GRID LAYOUT STYLING */
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
+/* General Page Elements Layout */
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-input {
-  z-index: 3;
-}
-label {
-  z-index: 3;
-}
+  .quote {
+    text-align: center;
+    list-style-position: inside
+  }
 
-/* Style page content */
-.main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
-}
+  .jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 10px;}
-}
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
 
- {
-  margin-top: 40px;
-}
+  .jumbotron-heading {
+    font-weight: 300;
+  }
 
-/* Making initial Jumbotron stay above the sidenav */
+  .jumbotron .container {
+    max-width: 40rem;
+  }
 
-section.jumbotron.textcenter {
-  background-color: white;
-  z-index: 4;
-}
+  #go-top-button {
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border-radius: 50%
+  }
 
-#go-top-button {
-  width: 50px;
-  height: 50px;
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border-radius: 50%
-}
+/* FOOTER STYLING */
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sitewidefooter {
+    list-style: none;
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  .btn-lg.btn-block.email-me {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10pt;
+    border: 1pt solid;
+    border-style: double;
+    border-color: black;
+  }
+
+
+  a.btn-lg.btn-block.email-me {
+    text-decoration: none;
+    color: black;
+  }
+
+  .btn-lg.btn-block.email-me:hover {
+    color: gray;
+  }
+
+  a.mobile.email-me {
+    font-style: italic;
+    text-align: right;
+    margin-left: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10pt;
+    color: black;
+  }
+
+/* END OF FOOTER STYLES */
+
+/* Page 2 sidebar menu */
+  .sidenav {
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed;
+    top: 76px; /* Stay at the top */
+    bottom: 100px;
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 100px;
+    padding-left: 30px
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  /* Style page2 content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+
+  /* On smaller screens, where height is less than 768px, change the style of the sidebar */
+  @media screen and (max-width: 768px) {
+    .sidenav {width:80px;
+    padding-left: 10px}
+    label {
+      font-size: 12px;
+    }
+    .main {margin-left: 80px}
+  }
