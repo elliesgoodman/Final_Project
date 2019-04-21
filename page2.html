@@ -46,15 +46,24 @@
  <!-- Side navigation -->
 <div class="navwrapper">
 <div class="sidenav">
-  <a href="#">All</a>
-  <a href="#" rel="services">Services</a>
-  <a href="#" rel="clients">Clients</a>
-  <a href="#" rel="contacts">Contacts</a>
+  <label><input type="checkbox" name="colorCheckbox" value="box"> all</label>
+  <br>
+  <label><input type="checkbox" name="colorCheckbox" value="red"> red</label>
+  <br>
+  <label><input type="checkbox" name="colorCheckbox" value="green"> green</label>
+  <br>
+  <label><input type="checkbox" name="colorCheckbox" value="blue"> blue</label>
 </div>
 
 <!-- Page content -->
 <div class="main">
+  <div class="red box">You have selected <strong>red checkbox</strong> so i am here</div>
+  <div class="green box">You have selected <strong>green checkbox</strong> so i am here</div>
+  <div class="blue box">You have selected <strong>blue checkbox</strong> so i am here</div>
 
+<br>
+<br>
+<br>
  <div class="album py-5 bg-light">
    <div class="container">
 
@@ -199,10 +208,6 @@
      </div>
    </div>
  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</div>
 </div>
 <!-- FOOTER-->
 <!-- Email Me text that shows on mobile  -->
@@ -239,5 +244,10 @@
   </div>
 </div>
 <!-- END OF FOOTER -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type='text/javascript' src="js/scripts.js"></script>
+</div>
 </body>
 </html>
