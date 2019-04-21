@@ -33,6 +33,15 @@ body {
   font-size: 15px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(97 90 87);
+}
 
 /* Carousel sizing */
   .carousel {
