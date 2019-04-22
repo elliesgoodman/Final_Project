@@ -6,36 +6,60 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  <link rel="stylesheet" type="text/css" href="css/styles.css">
- <link rel="stylesheet" type="text/css" href="css/carousel.css">
+ <link rel="stylesheet" href="https://use.typekit.net/arp5cgw.css">
+ <link rel="stylesheet" type="text/css" href="css/navbartrials.css">
+ <link rel="stylesheet" type="text/css" href="css/styles.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 </head>
 <body>
-  <!-- Navbar with unfolding information above -->
-  <!-- Info for unfolding section -->
-    <div class="pos-f-t">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-light p-4">
-          <p>Collapsed content</p>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
+  <nav role="navigation">
+    <div id="menuBurger">
+      <!--IMPORTANT
+      A fake / hidden checkbox is used as click reciever (when we click on the burger to trigger the action), so you can use the :checked selector on it in our css file.
+      -->
+      <input type="checkbox" />
+
+      <!--Some spans to act as a hamburger bars.-->
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!--The menu has to be inside our button, so it activates on click through css file-->
+      <ul id="menu">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <a href="#"><li><h2>ABOUT</h2></li></a>
+            <a href="#"><li><h3>/ east wing biennial<h3></li></a>
+            <a href="#"><li><h3>13th year</h3></li></a>
+            <a href="#"><li><h3>sponsors</h3></li></a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <a href="#"><li><h2>ARTISTS</h2></li></a>
+            <a href="#"><li><h3>a-z<h3></li></a>
+            <a href="#"><li><h3>studio tours</h3></li></a>
+            <a href="#"><li><h3>artworks</h3></li></a>
         </div>
+            <div class="col-sm-12 col-md-4">
+              <a href="#"><li><h2>EXHIBITION</h2></li></a>
+              <a href="#"><li><h3>openings<h3></li></a>
+              <a href="#"><li><h3>events</h3></li></a>
+              <a href="#"><li><h3>find us</h3></li></a>
+          </div>
       </div>
-  <!-- Navbar that shows burger collapse button, logo at centre and links on right -->
-      <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <img src="images/surgelogo.png" width="150px" height="50" alt="">
-        </a>
-        <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        </ul>
-      </nav>
+      </ul>
     </div>
-  <!-- END OF NAV BAR -->
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="row">
+      <div class="col-sm-7 right">
+      <a href="#"> <img id="logo" src="/Users/Student/Documents/coding_course_project/Final_Project/Final_Project/images/surgelogo.png" width="200px"> </a>
+      </div>
+      <div class="col-sm-5 right mobilehide">
+        <h2> <a href="#"> CATALOGUE </a></h2>
+      </div>
+    </div>
+  </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -84,10 +108,54 @@
       </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
+  <!-- FOOTER-->
+  <!-- Email Me text that shows on mobile  -->
+  <div class="container">
+    <div class="mobileshow email-me">
+      <p><a href="mailto:elliesgoodman@gmail.com" class="mobile email-us">EMAIL US ></a></p>
+    </div>
+  </div>
+  <!-- Main footer styles including email me button -->
+  <div class="container" id=grid>
+    <div class="row">
+      <!-- Email button disappears on phone and is replaced by text. -->
+      <div class="mobilehide col-sm-6 col-md-4 email">
+        <a href="mailto:elliesgoodman@gmail.com" class="btn-lg btn-block email-us" role="button">email us ></a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <ul class="sitewidefooter">
+          <li><a href="#"><h2>Info</h2></a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#"> Volunteer </a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <ul class="sitewidefooter">
+          <li><h2>Get Social</h2></li>
+          <li><a href="https://pinterest.com" target="_blank">
+        <span class='social-icon'><i class="fab fa-pinterest-p"></i></span>
+      </a></li>
+          <li><a href="https://twitter.com" target="_blank">
+        <span class='social-icon'><i class="fab fa-twitter"></i></span>
+      </a></li>
+          <li><a href="https://facebook.com" target="_blank">
+        <span class='social-icon'><i class="fab fa-facebook-f"></i></span></li>
+          <li><a href="https://instagram.com" target="_blank">
+            <span class='social-icon'><i class="fab fa-instagram"></i></span></li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- END OF FOOTER -->
+<div>
+  <button class="btn btn-dark" onclick="topFunction()" id="go-top-button" title="Go to top"><span class='social-icon'><i class="fas fa-chevron-up"></i></span></button>
+<div>
   <script
-  src="https://code.jquery.com/jquery-3.4.0.min.js"
-  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-  crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script type='text/javascript' src="js/scripts.js"></script>

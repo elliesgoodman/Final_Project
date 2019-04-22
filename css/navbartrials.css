@@ -102,6 +102,7 @@
   margin-top: 20px;
   padding: 50px;
   padding-top: 20px;
+  padding-bottom: 10px;
   z-index: auto;
 
   background: white;
@@ -122,6 +123,14 @@
   font-weight: 300;
   font-style: normal;
   font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    #menu li {
+        text-align: right;
+        margin-right: 5px;
+    }
 }
 
 /*
@@ -145,7 +154,7 @@
 }
 
 .col-sm-5.right h2 {
-  font-size: 20px;
+  font-size: 16px;
   padding-top:45px;
   padding-right: 20px;
 }

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <link rel="stylesheet" type="text/css" href="css/styles.css">
+ <link rel="stylesheet" href="https://use.typekit.net/arp5cgw.css">
+ <link rel="stylesheet" type="text/css" href="css/navbartrials.css">
+ <link rel="stylesheet" type="text/css" href="css/styles.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+  <nav role="navigation">
+    <div id="menuBurger">
+      <!--IMPORTANT
+      A fake / hidden checkbox is used as click reciever (when we click on the burger to trigger the action), so you can use the :checked selector on it in our css file.
+      -->
+      <input type="checkbox" />
+
+      <!--Some spans to act as a hamburger bars.-->
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!--The menu has to be inside our button, so it activates on click through css file-->
+      <ul id="menu">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <a href="#"><li><h2>ABOUT</h2></li></a>
+            <a href="#"><li><h3>/ east wing biennial<h3></li></a>
+            <a href="#"><li><h3>13th year</h3></li></a>
+            <a href="#"><li><h3>sponsors</h3></li></a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <a href="#"><li><h2>ARTWORKS</h2></li></a>
+            <a href="artworks.html"><li><h3>all artworks<h3></li></a>
+            <a href="#"><li><h3>studio tours</h3></li></a>
+            <a href="#"><li><h3>artist a-z</h3></li></a>
+        </div>
+            <div class="col-sm-12 col-md-4">
+              <a href="#"><li><h2>EXHIBITION</h2></li></a>
+              <a href="#"><li><h3>openings<h3></li></a>
+              <a href="#"><li><h3>events</h3></li></a>
+              <a href="#"><li><h3>find us</h3></li></a>
+          </div>
+      </div>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-sm-7 right">
+      <a href="index.html"> <img id="logo" src="images/surgelogo.png" width="200px"> </a>
+      </div>
+      <div class="col-sm-5 right mobilehide">
+        <h2><a href="catalogue.html"> CATALOGUE </a> </h2>
+      </div>
+    </div>
+  </nav>
+
+  <section class="jumbotron text-center">
+   <div class="container jumbo">
+     <h1 class="jumbotron-heading">Album example</h1>
+     <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+   </div>
+ </section>
+
+ <!-- Side navigation -->
+<div class="navwrapper">
+<div class="sidenav">
+  <label class="filter"><input type="checkbox" name="colorCheckbox" value="box"><span class="checkmark"></span>all</label>
+  <br>
+  <label class="filter"><input type="checkbox" name="colorCheckbox" value="red"><span class="checkmark"></span> red</label>
+  <br>
+  <label class="filter"><input type="checkbox" name="colorCheckbox" value="green"><span class="checkmark"></span> green</label>
+  <br>
+  <label class="filter"><input type="checkbox" name="colorCheckbox" value="blue"><span class="checkmark"></span> blue</label>
+  <br>
+  <label class="filter"><input type="checkbox" name="colorCheckbox" value="try"><span class="checkmark"></span> try</label>
+</div>
+
+<!-- Page content -->
+<div class="main">
+  <h2> USE THE THE CHECKBOXES ON THE LEFT TO FILTER BY ARTIST AND MEDIUM </h2>
+  <div class="red box try">You have selected <strong>red checkbox</strong> so i am here</div>
+  <div class="green box">You have selected <strong>green checkbox</strong> so i am here</div>
+  <div class="blue box try">You have selected <strong>blue checkbox</strong> so i am here</div>
+  <div class="red box">You have selected <strong>red checkbox</strong> so i am here</div>
+  <div class="green box try">You have selected <strong>green checkbox</strong> so i am here</div>
+  <div class="blue box">You have selected <strong>blue checkbox</strong> so i am here</div>
+
+<br>
+<br>
+<br>
+
+</div>
+
+<!-- FOOTER-->
+<!-- Email Me text that shows on mobile  -->
+<div class="container">
+  <div class="mobileshow email-me">
+    <p><a href="mailto:elliesgoodman@gmail.com" class="mobile email-us">EMAIL US ></a></p>
+  </div>
+</div>
+<!-- Main footer styles including email me button -->
+<div class="container" id=grid>
+  <div class="row">
+    <!-- Email button disappears on phone and is replaced by text. -->
+    <div class="mobilehide col-sm-6 col-md-4 email">
+      <a href="mailto:elliesgoodman@gmail.com" class="btn-lg btn-block email-us" role="button">email us ></a>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <ul class="sitewidefooter">
+        <li><a href="#"><h2>Info</h2></a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#"> Volunteer </a></li>
+      </ul>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <ul class="sitewidefooter">
+        <li><h2>Get Social</h2></li>
+        <li><a href="https://pinterest.com" target="_blank">
+      <span class='social-icon'><i class="fab fa-pinterest-p"></i></span>
+    </a></li>
+        <li><a href="https://twitter.com" target="_blank">
+      <span class='social-icon'><i class="fab fa-twitter"></i></span>
+    </a></li>
+        <li><a href="https://facebook.com" target="_blank">
+      <span class='social-icon'><i class="fab fa-facebook-f"></i></span></li>
+        <li><a href="https://instagram.com" target="_blank">
+          <span class='social-icon'><i class="fab fa-instagram"></i></span></li>
+        </a>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- END OF FOOTER -->
+<div>
+<button class="btn btn-dark" onclick="topFunction()" id="go-top-button" title="Go to top"><span class='social-icon'><i class="fas fa-chevron-up"></i></span></button>
+<div>
+<script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type='text/javascript' src="js/scripts.js"></script>
+</div>
+</body>
+</html>
