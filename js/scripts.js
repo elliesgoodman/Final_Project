@@ -1,3 +1,5 @@
+// artworks page jquery. Not perfect as you have to select all to begin with rather than have all selected but works.
+
 $(document).ready(function(){
     $('input[type="checkbox"]').click(function(){
         var inputValue = $(this).attr("value");
@@ -5,7 +7,7 @@ $(document).ready(function(){
     });
 });
 
-
+// backtotop button
 $(window).scroll(scrollFunction);
 
 function scrollFunction(){
@@ -21,6 +23,7 @@ function topFunction() {
   0});
 }
 
+// fade in checkboxes
 $(window).scroll(scrollFunction2);
 
 function scrollFunction2(){
@@ -31,7 +34,7 @@ function scrollFunction2(){
   }
 };
 
-// image source switch for artworks page
+// image source switch for artworks page to show a detail on hover
 
 var sourceSwap = function () {
         var $this = $(this);

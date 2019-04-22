@@ -7,7 +7,6 @@
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  <link rel="stylesheet" type="text/css" href="css/styles.css">
  <link rel="stylesheet" href="https://use.typekit.net/arp5cgw.css">
- <link rel="stylesheet" type="text/css" href="css/navbartrials.css">
  <link rel="stylesheet" type="text/css" href="css/styles.css">
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -29,19 +28,19 @@
       <ul id="menu">
         <div class="row">
           <div class="col-sm-12 col-md-4">
-            <a href="#"><li><h2>ABOUT</h2></li></a>
+            <li><h2>ABOUT</h2></li>
             <a href="#"><li><h3>/ east wing biennial<h3></li></a>
             <a href="#"><li><h3>13th year</h3></li></a>
             <a href="#"><li><h3>sponsors</h3></li></a>
           </div>
           <div class="col-sm-12 col-md-4">
-            <a href="#"><li><h2>ARTISTS</h2></li></a>
-            <a href="#"><li><h3>a-z<h3></li></a>
+            <li><h2>ARTWORKS</h2></li>
+            <a href="artworks.html"><li><h3>all artworks<h3></li></a>
             <a href="#"><li><h3>studio tours</h3></li></a>
-            <a href="#"><li><h3>artworks</h3></li></a>
+            <a href="#"><li><h3>artist a-z</h3></li></a>
         </div>
             <div class="col-sm-12 col-md-4">
-              <a href="#"><li><h2>EXHIBITION</h2></li></a>
+              <li><h2>EXHIBITION</h2></li>
               <a href="#"><li><h3>openings<h3></li></a>
               <a href="#"><li><h3>events</h3></li></a>
               <a href="#"><li><h3>find us</h3></li></a>
@@ -49,22 +48,31 @@
       </div>
       </ul>
     </div>
+    <!-- Adding other elements to Nav bar. Logo with index as link and catalogue access at all times -->
     <div class="row">
       <div class="col-sm-7 right">
-      <a href="#"> <img id="logo" src="/Users/Student/Documents/coding_course_project/Final_Project/Final_Project/images/surgelogo.png" width="200px"> </a>
+      <a href="index.html"> <img id="logo" src="images/surgelogo.png" width="200px"> </a>
       </div>
       <div class="col-sm-5 right mobilehide">
         <h2><a href="catalogue.html"> CATALOGUE </a> </h2>
       </div>
     </div>
   </nav>
+  <!-- END OF NAV -->
 
-  <section class="jumbotron text-center">
-   <div class="container jumbo">
-     <h1 class="jumbotron-heading">Album example</h1>
-     <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-   </div>
- </section>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="images/cecilia.jpg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+        <h1> CATALOGUE </h>
+      </div>
+    </div>
+  </div>
+
+  <div id="spacing" class="container">
+    <h2 id="instructions"> Take a look at the catalogue from the 13th / east wing biennial.</h2>
+  </div>
 
 <div class="container">
 <iframe src="https://e.issuu.com/anonymous-embed.html?u=eastwingbiennial&d=surge_ewb13_catalogue" style="border:none;width:100%;height:500px;" allowfullscreen></iframe>
