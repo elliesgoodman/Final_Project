@@ -69,17 +69,16 @@
 
  <!-- Side navigation -->
 <div class="navwrapper">
-<div id="myBtnContainer" class="sidenav">
-  <button class="btn btn-dark active" aria-pressed="true" onclick="filterSelection('all')"> Show all</button>
+<div class="sidenav">
+  <label class="filter"><input type="checkbox" name="colorCheckbox" value="box"><span class="checkmark"></span>all</label>
   <br>
+  <label class="filter"><input type="checkbox" name="colorCheckbox" value="red"><span class="checkmark"></span> red</label>
   <br>
-  <button class="btn btn-dark " onclick="filterSelection('nature')"> Nature</button>
+  <label class="filter"><input type="checkbox" name="colorCheckbox" value="green"><span class="checkmark"></span> green</label>
   <br>
+  <label class="filter"><input type="checkbox" name="colorCheckbox" value="blue"><span class="checkmark"></span> blue</label>
   <br>
-  <button class="btn btn-dark " onclick="filterSelection('cars')"> Cars</button>
-  <br>
-  <br>
-  <button class="btn btn-dark " onclick="filterSelection('people')"> People</button>
+  <label class="filter"><input type="checkbox" name="colorCheckbox" value="try"><span class="checkmark"></span> try</label>
 </div>
 
 <!-- Page content -->
@@ -87,8 +86,8 @@
   <h2 id="instructions" > Use the checkboxes on the right to filter by artist and medium </h2>
 </div>
 <div class="main">
-  <div class="row artworks">
-  <div class="col-md-4 nature">
+      <div class="row artworks">
+  <div class="red box col-md-4">
     <div class="thumbnail">
       <a href="images/artworks/ava.jpg">
         <img class="xyz" data-alt-src="images/artworks/ava2.jpg" src="images/artworks/ava.jpg" width="80%">
@@ -98,7 +97,7 @@
       </a>
     </div>
   </div>
-  <div class="col-md-4 cars">
+  <div class="green box col-md-4">
     <div class="thumbnail">
       <a href="images/artworks/contactt1.jpg">
         <img class="xyz" data-alt-src="images/artworks/contactt2.jpg" src="images/artworks/contactt1.jpg" width="80%">
@@ -108,7 +107,7 @@
       </a>
     </div>
   </div>
-  <div class="col-md-4 people">
+  <div class="blue box col-md-4">
     <div class="thumbnail">
       <a href="images/artworks/emma.jpg">
         <img class="xyz" data-alt-src="images/artworks/emma2.jpg" src="images/artworks/emma.jpg" width="80%">

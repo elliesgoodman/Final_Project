@@ -258,20 +258,14 @@ a:hover {
     background-color: black;
   }
 
-  .col-md-4.cars {
-    display: none;
-  }
-  .col-md-4.nature {
-    display: none;
-  }
-  .col-md-4.people {
-    display: none;
-  }
 
-  .show {
-    display: block;
-  }
-
+  .box{
+          color: #fff;
+          padding: 20px;
+          display: none;
+          margin-top: 20px;
+      }
+      label{ margin-right: 15px; }
 
   /* Style page2 content */
   .main {
@@ -289,10 +283,7 @@ a:hover {
     .sidenav {width:80px;
     padding-left: 10px}
     label {
-      font-size: 12px;}
-
-      /* The "show" class is added to the filtered elements */
-
+      font-size: 12px;
     }
     .main {margin-left: 80px}
   }
