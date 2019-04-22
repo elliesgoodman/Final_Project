@@ -7,9 +7,7 @@
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  <link rel="stylesheet" type="text/css" href="css/styles.css">
  <link rel="stylesheet" href="https://use.typekit.net/arp5cgw.css">
- <link rel="stylesheet" type="text/css" href="css/navbartrials.css">
  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="css/artwork-styles.css">
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 </head>
@@ -30,19 +28,19 @@
       <ul id="menu">
         <div class="row">
           <div class="col-sm-12 col-md-4">
-            <a href="#"><li><h2>ABOUT</h2></li></a>
+            <li><h2>ABOUT</h2></li>
             <a href="#"><li><h3>/ east wing biennial<h3></li></a>
             <a href="#"><li><h3>13th year</h3></li></a>
             <a href="#"><li><h3>sponsors</h3></li></a>
           </div>
           <div class="col-sm-12 col-md-4">
-            <a href="#"><li><h2>ARTWORKS</h2></li></a>
+            <li><h2>ARTWORKS</h2></li>
             <a href="artworks.html"><li><h3>all artworks<h3></li></a>
             <a href="#"><li><h3>studio tours</h3></li></a>
             <a href="#"><li><h3>artist a-z</h3></li></a>
         </div>
             <div class="col-sm-12 col-md-4">
-              <a href="#"><li><h2>EXHIBITION</h2></li></a>
+              <li><h2>EXHIBITION</h2></li>
               <a href="#"><li><h3>openings<h3></li></a>
               <a href="#"><li><h3>events</h3></li></a>
               <a href="#"><li><h3>find us</h3></li></a>
@@ -50,6 +48,7 @@
       </div>
       </ul>
     </div>
+    <!-- Adding other elements to Nav bar. Logo with index as link and catalogue access at all times -->
     <div class="row">
       <div class="col-sm-7 right">
       <a href="index.html"> <img id="logo" src="images/surgelogo.png" width="200px"> </a>
@@ -59,66 +58,181 @@
       </div>
     </div>
   </nav>
+  <!-- END OF NAV -->
 
-  <section class="jumbotron text-center">
-   <div class="container jumbo">
-     <h1 class="jumbotron-heading">Album example</h1>
-     <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-   </div>
- </section>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="images/gallerywall.jpg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+        <h1> ALL ARTWORKS </h>
+      </div>
+    </div>
+  </div>
+
+  <div id="spacing" class="container">
+    <h2 id="instructions"> Use the checkboxes on the left to filter by medium.</h2>
+  </div>
 
  <!-- Side navigation -->
 <div class="navwrapper">
 <div class="sidenav">
   <label class="filter"><input type="checkbox" name="colorCheckbox" value="box"><span class="checkmark"></span>all</label>
   <br>
-  <label class="filter"><input type="checkbox" name="colorCheckbox" value="red"><span class="checkmark"></span> red</label>
+  <label class="filter"><input type="checkbox" name="colorCheckbox" value="painting"><span class="checkmark"></span> painting</label>
   <br>
-  <label class="filter"><input type="checkbox" name="colorCheckbox" value="green"><span class="checkmark"></span> green</label>
+  <label class="filter"><input type="checkbox" name="colorCheckbox" value="photography"><span class="checkmark"></span> photography</label>
   <br>
-  <label class="filter"><input type="checkbox" name="colorCheckbox" value="blue"><span class="checkmark"></span> blue</label>
-  <br>
-  <label class="filter"><input type="checkbox" name="colorCheckbox" value="try"><span class="checkmark"></span> try</label>
+  <label class="filter"><input type="checkbox" name="colorCheckbox" value="sculpture"><span class="checkmark"></span> sculpture</label>
 </div>
 
 <!-- Page content -->
-<div class="container">
-  <h2 id="instructions" > Use the checkboxes on the right to filter by artist and medium </h2>
-</div>
 <div class="main">
       <div class="row artworks">
-  <div class="red box col-md-4">
+  <div class="sculpture box col-md-4">
     <div class="thumbnail">
-      <a href="images/artworks/ava.jpg">
+      <a href="#" data-toggle="modal" data-target=".pop-up-am">
         <img class="xyz" data-alt-src="images/artworks/ava2.jpg" src="images/artworks/ava.jpg" width="80%">
         <div class="caption">
-          <p>THE SEDUCTION, Ava</p>
+          <h3>Ava Moradi</h3>
+          <p>The Seduction</p>
         </div>
       </a>
     </div>
   </div>
-  <div class="green box col-md-4">
+  <div class="painting box col-md-4">
     <div class="thumbnail">
-      <a href="images/artworks/contactt1.jpg">
-        <img class="xyz" data-alt-src="images/artworks/contactt2.jpg" src="images/artworks/contactt1.jpg" width="80%">
+      <a href="#" data-toggle="modal" data-target=".pop-up-vh">
+        <img class="xyz" data-alt-src="images/artworks/vanya2.jpg" src="images/artworks/vanya.jpg" width="80%">
         <div class="caption">
-          <p>Contact, Rhona</p>
+          <h3>Vanya Horwath</h3>
+          <p>Musical Chairs</p>
         </div>
       </a>
     </div>
   </div>
-  <div class="blue box col-md-4">
+  <div class="painting box col-md-4">
     <div class="thumbnail">
-      <a href="images/artworks/emma.jpg">
+      <a href="#" data-toggle="modal" data-target=".pop-up-ef">
         <img class="xyz" data-alt-src="images/artworks/emma2.jpg" src="images/artworks/emma.jpg" width="80%">
         <div class="caption">
-          <p>Emma Fineman</p>
+          <h3>Emma Fineman</h3>
+          <p>I felt a presence in the room...</p>
         </div>
       </a>
     </div>
   </div>
+<div class="photography box col-md-4">
+  <div class="thumbnail">
+    <a href="#" data-toggle="modal" data-target=".pop-up-gh">
+      <img class="xyz" data-alt-src="images/artworks/gabriella2.jpg" src="images/artworks/gabriella.jpg" width="80%">
+      <div class="caption">
+        <h3>Gabriella Hirst</h3>
+        <p>Interlude</p>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="photography box col-md-4">
+  <div class="thumbnail">
+    <a href="#" data-toggle="modal" data-target=".pop-up-md">
+      <img class="xyz" data-alt-src="images/artworks/malcie2.jpg" src="images/artworks/malcie.jpg" width="80%">
+      <div class="caption">
+        <h3>Malcy Delacour</h3>
+        <p>Drawing A Photograph</p>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="sculpture box col-md-4">
+  <div class="thumbnail">
+    <a href="#" data-toggle="modal" data-target=".pop-up-mk">
+      <img class="xyz" data-alt-src="images/artworks/minhee2.jpg" src="images/artworks/minhee.jpg" width="80%">
+      <div class="caption">
+        <h3> Minhee Kim <h3>
+        <p>Memory Jacket</p>
+      </div>
+    </a>
+  </div>
 </div>
 </div>
+</div>
+
+<!-- MODAL BOXES FOR POP UP IMAGES -->
+
+<div class="modal fade pop-up-ef" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        </div>
+        <div class="modal-body">
+        <img src="images/artworks/emma.jpg" alt="Emma Fineman" width="100%">
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal mixer image -->
+  <div class="modal fade pop-up-mk" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          </div>
+          <div class="modal-body">
+          <img src="images/artworks/minhee.jpg" alt="Minhee Kim" width="100%">
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal mixer image -->
+    <div class="modal fade pop-up-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+            <img src="images/artworks/malcie.jpg" alt="Malcy Delacour" width="100%">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal mixer image -->
+      <div class="modal fade pop-up-gh" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              </div>
+              <div class="modal-body">
+              <img src="images/artworks/gabriella.jpg" alt="Gabriella Hirst" width="100%">
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal mixer image -->
+        <div class="modal fade pop-up-vh" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                <img src="images/artworks/vanya.jpg" alt="Vanya Horwath" width="100%">
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal mixer image -->
+          <div class="modal fade pop-up-am" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  </div>
+                  <div class="modal-body">
+                  <img src="images/artworks/ava.jpg" alt="Ava Moradi" width="100%">
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal mixer image -->
+<!--END OF MODALS  -->
 
 <!-- FOOTER-->
 <!-- Email Me text that shows on mobile  -->
