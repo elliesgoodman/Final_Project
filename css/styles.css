@@ -43,6 +43,26 @@ a:hover {
   color: rgb(97 90 87);
 }
 
+/* NAVBAR STYLING */
+
+#logo {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-light {
+  background: white;
+}
+
+.bg-light.p4 {
+  background: white;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
 /* Carousel sizing */
   .carousel {
     margin-bottom: 4rem;

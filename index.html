@@ -13,53 +13,48 @@
 
 </head>
 <body>
-  <nav role="navigation">
-    <div id="menuBurger">
-      <!--IMPORTANT
-      A fake / hidden checkbox is used as click reciever (when we click on the burger to trigger the action), so you can use the :checked selector on it in our css file.
-      -->
-      <input type="checkbox" />
-
-      <!--Some spans to act as a hamburger bars.-->
-      <span></span>
-      <span></span>
-      <span></span>
-
-      <!--The menu has to be inside our button, so it activates on click through css file-->
-      <ul id="menu">
-        <div class="row">
-          <div class="col-sm-12 col-md-4">
-            <li><h2>ABOUT</h2></li>
-            <a href="#"><li><h3>/ east wing biennial<h3></li></a>
-            <a href="#"><li><h3>13th year</h3></li></a>
-            <a href="#"><li><h3>sponsors</h3></li></a>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <li><h2>ARTWORKS</h2></li>
-            <a href="artworks.html"><li><h3>all artworks<h3></li></a>
-            <a href="#"><li><h3>studio tours</h3></li></a>
-            <a href="#"><li><h3>artist a-z</h3></li></a>
-        </div>
+  <!-- Beginning of Nav -->
+    <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="p-4">
+        <ul id="menu">
+          <div class="row">
             <div class="col-sm-12 col-md-4">
-              <li><h2>EXHIBITION</h2></li>
-              <a href="#"><li><h3>openings<h3></li></a>
-              <a href="#"><li><h3>events</h3></li></a>
-              <a href="#"><li><h3>find us</h3></li></a>
+              <li><h2>ABOUT</h2></li>
+              <a href="#"><li><h3>/ east wing biennial<h3></li></a>
+              <a href="#"><li><h3>13th year</h3></li></a>
+              <a href="#"><li><h3>sponsors</h3></li></a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <li><h2>ARTWORKS</h2></li>
+              <a href="artworks.html"><li><h3>all artworks<h3></li></a>
+              <a href="#"><li><h3>studio tours</h3></li></a>
+              <a href="#"><li><h3>artist a-z</h3></li></a>
           </div>
+              <div class="col-sm-12 col-md-4">
+                <li><h2>EXHIBITION</h2></li>
+                <a href="catalogue.html"><li><h3>catalogue<h3></li></a>
+                <a href="#"><li><h3>events</h3></li></a>
+                <a href="#"><li><h3>find us</h3></li></a>
+            </div>
+        </div>
+        </ul>
       </div>
-      </ul>
+        <span class="text-muted"></span>
+      </div>
     </div>
-    <!-- Adding other elements to Nav bar. Logo with index as link and catalogue access at all times -->
-    <div class="row">
-      <div class="col-sm-7 right">
-      <a href="index.html"> <img id="logo" src="images/surgelogo.png" width="200px"> </a>
+    <nav class="navbar navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="row">
+        <div class="col-sm-7 right">
+        <a href="index.html"> <img id="logo" src="images/surgelogo.png" width="200px"> </a>
+        </div>
       </div>
-      <div class="col-sm-5 right mobilehide">
-        <h2><a href="catalogue.html"> CATALOGUE </a> </h2>
-      </div>
-    </div>
-  </nav>
-  <!-- END OF NAV -->
+    </nav>
+  </div>
+    <!-- END OF NAV -->
   <!-- Carousel for top banner of website with captions and indicators-->
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">

@@ -12,19 +12,10 @@
 
 </head>
 <body>
-  <nav role="navigation">
-    <div id="menuBurger">
-      <!--IMPORTANT
-      A fake / hidden checkbox is used as click reciever (when we click on the burger to trigger the action), so you can use the :checked selector on it in our css file.
-      -->
-      <input type="checkbox" />
-
-      <!--Some spans to act as a hamburger bars.-->
-      <span></span>
-      <span></span>
-      <span></span>
-
-      <!--The menu has to be inside our button, so it activates on click through css file-->
+<!-- Beginning of Nav -->
+  <div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="p-4">
       <ul id="menu">
         <div class="row">
           <div class="col-sm-12 col-md-4">
@@ -41,23 +32,27 @@
         </div>
             <div class="col-sm-12 col-md-4">
               <li><h2>EXHIBITION</h2></li>
-              <a href="#"><li><h3>openings<h3></li></a>
+              <a href="catalogue.html"><li><h3>catalogue<h3></li></a>
               <a href="#"><li><h3>events</h3></li></a>
               <a href="#"><li><h3>find us</h3></li></a>
           </div>
       </div>
       </ul>
     </div>
-    <!-- Adding other elements to Nav bar. Logo with index as link and catalogue access at all times -->
+      <span class="text-muted"></span>
+    </div>
+  </div>
+  <nav class="navbar navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="row">
       <div class="col-sm-7 right">
       <a href="index.html"> <img id="logo" src="images/surgelogo.png" width="200px"> </a>
       </div>
-      <div class="col-sm-5 right mobilehide">
-        <h2><a href="catalogue.html"> CATALOGUE </a> </h2>
-      </div>
     </div>
   </nav>
+</div>
   <!-- END OF NAV -->
 
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -70,11 +65,8 @@
     </div>
   </div>
 
-  <div id="spacing" class="container">
-    <h2 id="instructions"> Take a look at the catalogue from the 13th / east wing biennial.</h2>
-  </div>
-
 <div class="container">
+  <br>
 <iframe src="https://e.issuu.com/anonymous-embed.html?u=eastwingbiennial&d=surge_ewb13_catalogue" style="border:none;width:100%;height:500px;" allowfullscreen></iframe>
 </div>
 
