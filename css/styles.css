@@ -265,16 +265,18 @@ a:hover {
           display: none;
           margin-top: 20px;
       }
-      .red{ background: #ff0000; }
-      .green{ background: #228B22; }
-      .blue{ background: #0000ff; }
       label{ margin-right: 15px; }
 
   /* Style page2 content */
   .main {
-    padding: 0px 10px;
     text-align: center;
+    margin-left: 100px;
+    margin-right: 10px;
   }
+
+#instructions {
+  text-align: center;
+}
 
   /* On smaller screens, where height is less than 768px, change the style of the sidebar */
   @media screen and (max-width: 768px) {
