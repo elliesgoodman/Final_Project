@@ -24,7 +24,7 @@ function topFunction() {
 $(window).scroll(scrollFunction2);
 
 function scrollFunction2(){
-  if ($(window).scrollTop() > 200){
+  if ($(window).scrollTop() > 150){
     $(".sidenav").fadeIn();
   } else {
     $(".sidenav").fadeOut();
