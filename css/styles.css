@@ -63,6 +63,14 @@ ul {
   text-align: center;
 }
 
+.p-4 {
+  padding-top: 10px;
+}
+
+.row.pagebottom {
+  padding-bottom: 50px;
+}
+
 /* Carousel sizing */
   .carousel {
     margin-bottom: 4rem;
